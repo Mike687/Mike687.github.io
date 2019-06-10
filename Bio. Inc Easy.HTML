@@ -252,11 +252,11 @@
         }
         switch (target) {
             case "d_color":
-                if (system.style.width == 0 + "px") {
+                if (system.style.width == 0 + "px"system.style.width == 0 + "px") {
                     document.getElementsByClassName("virus")[0].disabled = true;
                     win_counter += 1;
                 }
-                else {
+                if (system.style.width !== 0 + "px") {
                     health1 -= 20;
                     system.style.width = health1 + "px";
                     system.innerText = (100 - (300 - health1) / 3).toFixed(2) + "%";
@@ -267,7 +267,7 @@
                     document.getElementsByClassName("virus")[1].disabled = true;
                     win_counter += 1;
                 }
-                else {
+                if (system.style.width !== 0 + "px") {
                 health2 -= 20;
                 system.style.width = health2 + "px";
                 system.innerText = (100 - (300 - health2) / 3).toFixed(2) + "%";
@@ -278,7 +278,7 @@
                     document.getElementsByClassName("virus")[2].disabled = true;
                     win_counter += 1;
                 }
-                else {
+                if (system.style.width !== 0 + "px") {
                 health3 -= 20;
                 system.style.width = health3 + "px";
                 system.innerText = (100 - (300 - health3) / 3).toFixed(2) + "%";
@@ -289,7 +289,7 @@
                     document.getElementsByClassName("virus")[3].disabled = true;
                     win_counter += 1;
                 }
-                else {
+                if (system.style.width !== 0 + "px") {
                 health4 -= 20;
                 system.style.width = health4 + "px";
                 system.innerText = (100 - (300 - health4) / 3).toFixed(2) + "%";
@@ -300,7 +300,7 @@
                     document.getElementsByClassName("virus")[4].disabled = true;
                     win_counter += 1;
                 }
-                else {
+                if (system.style.width !== 0 + "px") {
                 health5 -= 20;
                 system.style.width = health5 + "px";
                 system.innerText = (100 - (300 - health5) / 3).toFixed(2) + "%";
@@ -311,7 +311,7 @@
                     document.getElementsByClassName("virus")[5].disabled = true;
                     win_counter += 1;
                 }
-                else {
+                if (system.style.width !== 0 + "px") {
                 health6 -= 20;
                 system.style.width = health6 + "px";
                 system.innerText = (100 - (300 - health6) / 3).toFixed(2) + "%";
@@ -322,7 +322,7 @@
                     document.getElementsByClassName("virus")[6].disabled = true;
                     win_counter += 1;
                 }
-                else {
+                if (system.style.width !== 0 + "px") {
                 health7 -= 20;
                 system.style.width = health7 + "px";
                 system.innerText = (100 - (300 - health7) / 3).toFixed(2) + "%";
