@@ -231,6 +231,9 @@
     var health5 = 300;
     var health6 = 300;
     var health7 = 300;
+    window.onload = function () {
+        document.getElementsByClassName('color').style.color = document.style.background;    
+    }
     function add_cure() {
         if (p_counter === 101) {
             clearInterval(plus_cure);
