@@ -104,7 +104,7 @@
     }
 </style>
 
-<body>
+<body onload="document.getElementsByClassName('color').style.color = body.style.background;">
     <div id="digestive" class="system">
         Digestive System:
         <div id="d_health" class="health">
@@ -256,9 +256,7 @@
                     document.getElementsByClassName("virus")[0].disabled = true;
                     win_counter += 1;
                 }
-                if (system.innerText = "0.00%") {
-                    system.innerText = "";
-                }
+              
                     health1 -= 20;
                     system.style.width = health1 + "px";
                     system.innerText = (100 - (300 - health1) / 3).toFixed(2) + "%";
@@ -269,9 +267,7 @@
                     win_counter += 1;
   
                 }
-                if (system.innerText = "0.00%") {
-                    system.innerText = "";
-                }
+               
                 health2 -= 20;
                 system.style.width = health2 + "px";
                 system.innerText = (100 - (300 - health2) / 3).toFixed(2) + "%";
@@ -281,9 +277,7 @@
                     document.getElementsByClassName("virus")[2].disabled = true;
                     win_counter += 1;
                 }
-                if (system.innerText = "0.00%") {
-                    system.innerText = "";
-                }
+                
                 health3 -= 20;
                 system.style.width = health3 + "px";
                 system.innerText = (100 - (300 - health3) / 3).toFixed(2) + "%";
@@ -293,9 +287,7 @@
                     document.getElementsByClassName("virus")[3].disabled = true;
                     win_counter += 1;
                 }
-                if (system.innerText = "0.00%") {
-                    system.innerText = "";
-                }
+                
                 health4 -= 20;
                 system.style.width = health4 + "px";
                 system.innerText = (100 - (300 - health4) / 3).toFixed(2) + "%";
@@ -305,9 +297,7 @@
                     document.getElementsByClassName("virus")[4].disabled = true;
                     win_counter += 1;
                 }
-                if (system.innerText = "0.00%") {
-                    system.innerText = "";
-                }
+                
                 health5 -= 20;
                 system.style.width = health5 + "px";
                 system.innerText = (100 - (300 - health5) / 3).toFixed(2) + "%";
@@ -317,9 +307,7 @@
                     document.getElementsByClassName("virus")[5].disabled = true;
                     win_counter += 1;
                 }
-                if (system.innerText = "0.00%") {
-                    system.innerText = "";
-                }
+                
                 health6 -= 20;
                 system.style.width = health6 + "px";
                 system.innerText = (100 - (300 - health6) / 3).toFixed(2) + "%";
@@ -329,9 +317,7 @@
                     document.getElementsByClassName("virus")[6].disabled = true;
                     win_counter += 1;
                 }
-                if (system.innerText = "0.00%") {
-                    system.innerText = "";
-                }
+               
                 health7 -= 20;
                 system.style.width = health7 + "px";
                 system.innerText = (100 - (300 - health7) / 3).toFixed(2) + "%";
