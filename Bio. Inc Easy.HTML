@@ -193,7 +193,7 @@
             onclick="location.href = 'index.html'">Home</button>
         <button onclick="location.href = location.href">Restart</button>
         <input type="password" id="cheat_codes"><button
-            onclick="if (document.getElementById('cheat_codes').value == 'Plague.Inc') { alert('You have typed a valid code and have received 5,000,000 DNA Points.'); document.getElementById('dna_points').innerText = 'DNA Points: 5000000'; dna_points = 5000000 } else { alert('Your code is invalid.') }; document.getElementById('cheat_codes').value = ''">Submit</button>
+            onclick="if (document.getElementById('cheat_codes').value == 'Plague.Inc') { alert('You have typed a valid code and have received 5,000,000 DNA Points.'); document.getElementById('dna_points').innerText = 'DNA Points: 5000000'; dna_points = 5000000; for (var i = 0; i < 7; i++) { document.getElementsByClassName("virus")[i].disabled = false; } else { alert('Your code is invalid.') }; document.getElementById('cheat_codes').value = ''">Submit</button>
     </div>
     <div id="cure_div">
         <img src="http://cdn.lowgif.com/full/29f388006c6cf443-welcome-to-the-machine-gifs-find-share-on-giphy.gif"
@@ -231,9 +231,6 @@
     var health5 = 300;
     var health6 = 300;
     var health7 = 300;
-    window.onload = function () {
-        document.getElementsByClassName('color').style.color = document.style.background;    
-    }
     function add_cure() {
         if (p_counter === 101) {
             clearInterval(plus_cure);
